@@ -11,9 +11,11 @@
    .badge {
       background-color: rgba(51, 51, 51, 0.091);
       color: $dark;
+      margin-bottom: 0.8rem;
    }
    .video-container {
       background-color: $dark;
+      border: none;
       width: 500px;
       height: 300px;
       border-radius: 1rem;

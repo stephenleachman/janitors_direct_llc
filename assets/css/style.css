@@ -10961,6 +10961,26 @@ a i {
     transition: 0.3s ease;
   }
 }
+@media (max-width: 1199.98px) {
+  .navbar .offcanvas-body {
+    padding-left: 0px;
+  }
+  .navbar .offcanvas-body a {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+  }
+  .navbar .offcanvas-body form {
+    margin-top: 2rem;
+  }
+  .navbar .offcanvas-body form .btn {
+    margin-left: 1rem !important;
+    margin-top: 1rem !important;
+  }
+  .navbar .offcanvas-body .active {
+    color: #ffc700 !important;
+  }
+}
+
 #footer {
   padding: 5rem 0rem 0 0rem;
   background-color: #333;
@@ -11018,9 +11038,11 @@ a i {
 #hero .badge {
   background-color: rgba(51, 51, 51, 0.091);
   color: #333;
+  margin-bottom: 0.8rem;
 }
 #hero .video-container {
   background-color: #333;
+  border: none;
   width: 500px;
   height: 300px;
   border-radius: 1rem;
