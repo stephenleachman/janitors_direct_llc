@@ -189,8 +189,8 @@
                      </div>
                      <div class="col-md-3">
                         <label for="Service" class="form-label mt-3">State</label>
-                        <select id="Service" class="form-select" name="State" disabled>
-                        <option selected>Florida</option>
+                        <select id="Service" class="form-select" name="role[]" multiple disabled>
+                        <option value="Florida" selected>Florida</option>
                         </select>
                      </div>
                      <!-- Zip -->
@@ -211,12 +211,12 @@
                      <!-- Services Dropdown -->
                      <div class="col-md-6">
                         <label for="Service" class="form-label mt-3">How can we help?</label>
-                        <select id="Service" class="form-select" name="Services" required>
+                        <select id="Service" class="form-select" name="role[]" multiple required>
                         <option selected disabled value=>Choose...</option>
-                        <option>Maintenance Cleaning</option>
-                        <option>Facility Deep Cleaning</option>
-                        <option>Disinfectant Services</option>
-                        <option>Not Sure</option>
+                        <option value="Maintenance Cleaning">Maintenance Cleaning</option>
+                        <option value="Facility Deep Cleaning">Facility Deep Cleaning</option>
+                        <option value="Disinfectant Services">Disinfectant Services</option>
+                        <option  value="Not Sure">Not Sure</option>
                         </select>
                         <div class="valid-feedback">
                            Looks good!
