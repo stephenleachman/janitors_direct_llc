@@ -61,5 +61,13 @@ body{
 
 $offcanvas-horizontal-width:        250px;
 
+// Buttons --------------------------------------------------------------------
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           none;
+$btn-border-radius-sm:        none;
+$btn-border-radius-lg:        none;
+
+
 // IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
