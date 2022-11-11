@@ -1,0 +1,67 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+#request_a_quote_hero {
+   padding-top: 10rem;
+   padding-bottom: 10rem;
+   // min-height: 700px;
+   background-color: $primary;
+   .badge {
+      background-color: rgba(51, 51, 51, 0.091);
+      color: $dark;
+   }
+   @include media-breakpoint-down(md) {
+      padding-top: 8rem;
+   }
+}
+
+// ----------------------------------------------------------------------------------------------
+// QUOTE FORM SECTION 
+// ______________________________________________________________________________________________
+
+#quote_form{
+   ul {
+      font-size: 1.0rem !important;
+      li {
+         p{
+            font-size: 1rem;
+         }
+         list-style-type: none;  
+         a {
+            color: $dark !important;
+            text-decoration: none;
+            transition: 0.3s ease;
+            &:hover {
+               opacity: 70%;
+               transition: 0.3s ease;
+            }
+         }
+      }
+   }
+   .form-wrapper {
+      background-color: white !important;
+      padding: 1rem;
+      margin-top: -6rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      textarea {
+         min-height: 10rem;
+         max-height: 50rem;
+      }
+      .form-label {
+         font-size: 0.85rem;
+      }
+      .text-area-lable {
+         font-size: 0.85rem;
+         margin-left: 0.5rem;
+      }
+      .btn {
+         padding-left: 2rem;
+         padding-right: 2rem;
+      }
+      .tooltip-question {
+         background-color: white !important;
+         border: none !important;
+      }
+   }
+}

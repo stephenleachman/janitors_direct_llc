@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Meta Descripition -->
+   <meta name="description" content="Janitors Direct meta discription gos here">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/fontawesome.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+   <!-- Anama css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+   <title>Request A Quote</title>
+</head>
+
+<body class="bg-secondary">
+   <!-------------------------------------------------------------------------------------------------------
+   MANE NAVBAR 
+   -------------------------------------------------------------------------------------------------------->
+   <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-xl py-0">
+      <div class="container">
+         <!-- Nav Logo -->
+         <a href="index.html" class="navbar-brand me-1 me-lg-5"><img src="assets/img/NavBarLogo.svg" alt="Logo"></a>
+         <!-- Mobial Toggle Btn -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <!--  -->
+         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+         <!-- Mobial Menu Heading -->
+         <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-light" id="offcanvasDarkNavbarLabel">Janitors Direct LLC.</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <!-- Main Nav Links -->
+         <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 d-flex align-items-stretch">
+               <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center text-light" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center text-light" href="resources.html">Resources</a>
+               </li> 
+               <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center text-light" href="contact.html">Contact</a>
+               </li> 
+            </ul>         
+            <!-- Right Site Btn & # -->
+            <form class="container-xl-fluid d-xl-flex justify-content-end align-items-center ms-xl-5">
+               <a href="" class="me-4 text-light d-flex align-items-center mt-3 mt-xl-0" id="phone"><i class="fa-solid fa-phone me-2"></i>(888) 323-2232</a>
+               <a href="#" class="btn btn-md btn-primary mt-3 mt-xl-0">Requerst A Quote</a>
+            </form>   
+         </div>
+      </div>
+   </nav>
+   
+   <!-------------------------------------------------------------------------------------------------------
+   HERO SECTION 
+   -------------------------------------------------------------------------------------------------------->
+   <section id="request_a_quote_hero">
+      <div class="container">
+         <div class="row d-flex justify-content-center">
+               <div class="col-7">
+                  <h2 class="display-5 text-dark text-center">
+                     Ready To Get <span class="text-secondary">Started?</span>
+                  </h2>
+                  <div class="d-flex justify-content-center">
+                     <div class="spacer spacer-secondary"></div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                     <span class="badge rounded-pill">How can we help you and your facility</span>
+                  </div>
+               </div>
+         </div>
+      </div>
+   </section>
+   <!-------------------------------------------------------------------------------------------------------
+   FORM SECTION 
+   -------------------------------------------------------------------------------------------------------->
+   <section id="quote_form">
+      <div class="container mb-5">
+         <div class="row form-wrapper d-flex justify-content-between">
+            <div class="col-lg-4">
+               <h2 class="text-dark mb-4">
+                  A Simplified Process
+               </h2>
+               <P class="mt-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ex quasi repellendus suscipit ut dolor! 
+                  Cupiditate natus.
+               </P>
+               <P class="mt-1">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ex quasi repellendus suscipit ut dolor! 
+                  Cupiditate natus.
+               </P>
+            </div>
+            <!-- FORM IMPUTES -->
+            <div class="col-lg-7">
+               <form class="g-3 needs-validation" novalidate>
+                  <div class="row">
+                     <!-- Name -->
+                     <div class="col-md-6">
+                        <label for="Name" class="form-label">Your Name:</label>
+                        <input type="text" class="form-control" id="Name" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           What is your name?
+                        </div>
+                     </div>
+                     <!-- Position -->
+                     <div class="col-md-6">
+                        <label for="Position" class="form-label">Position:</label>
+                        <input type="text" class="form-control" id="Position" placeholder="Example CFO" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           What is your position within the company?
+                        </div>
+                     </div>
+                     <!-- Email -->
+                     <div class="col-md-6">
+                        <label for="Email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="Email" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Please provide us with your email.
+                        </div>
+                     </div>
+                     <!-- Phone Number -->
+                     <div class="col-md-6">
+                        <label for="Number" class="form-label">Phone Number:</label>
+                        <input type="text" class="form-control" id="Number" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           What is the best number to reach you at?
+                        </div>
+                     </div>
+                     <!-- Company -->
+                     <div class="col-md-6">
+                        <label for="Company" class="form-label">Company:</label>
+                        <input type="text" class="form-control" id="Company" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Please provide us with your company.
+                        </div>
+                     </div>
+                  </div>
+             
+                  <!-- Address Row -->
+                  <div class="row address mt-5">
+                     <div class="col-md-6">
+                        <label for="Street_Adderss" class="form-label">Address:</label>
+                        <input type="text" class="form-control" id="Street_Adderss" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Please provide us with a valid street address.
+                        </div>
+                     </div>
+                     <!-- Address 2 -->
+                     <div class="col-md-6 ">
+                        <label for="Street_Adderss" class="form-label">Address 2:</label>
+                        <input type="text" class="form-control" id="Street_Adderss">
+                     </div>
+                     <!-- City -->
+                     <div class="col-md-6">
+                        <label for="City" class="form-label">City:</label>
+                        <input type="text" class="form-control" id="City" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Please provide us with a valid city.
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <label for="Service" class="form-label">State</label>
+                        <select id="Service" class="form-select" disabled>
+                        <option selected>Florida</option>
+                        </select>
+                     </div>
+                     <!-- Zip -->
+                     <div class="col-md-3">
+                        <label for="Zip" class="form-label">Zip:</label>
+                        <input type="text" class="form-control" id="Zip" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Please provide us with a valid Zip Code.
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Row Cleaning Info -->
+                  <div class="row mt-5">
+                     <!-- Services Dropdown -->
+                     <div class="col-md-6">
+                        <label for="Service" class="form-label">How can we help?</label>
+                        <select id="Service" class="form-select" required>
+                        <option selected disabled value=>Choose...</option>
+                        <option>Maintenance Cleaning</option>
+                        <option>Facility Deep Cleaning</option>
+                        <option>Disinfectant Services</option>
+                        <option>Not Sure</option>
+                        </select>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Please let us know what service you would like.
+                        </div>
+                     </div>
+                     <!-- SQ Footage -->
+                     <div class="col-md-6">
+                        <label for="Zip" class="form-label d-flex justify-content-between">Whats the sq footage of your facility?
+                           <button type="button" class="tooltip-question"
+                                 data-bs-toggle="tooltip" data-bs-placement="top"
+                                 data-bs-custom-class="custom-tooltip"
+                                 data-bs-title="If you are unsure you can leave this blank">
+                           <i class="fa-regular fa-circle-question"></i>
+                           </button>
+                        </label>
+                        <input type="text" class="form-control" id="Zip">
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Please provide us with a valid Zip Code.
+                        </div>
+                     </div>
+                     <!-- Check Box -->
+                     <fieldset class="col-md-6 mt-4">
+                        <div class="row">
+                           <legend class="col-form-label col-12 mb-1">Have you previously used a commercial cleaning company?</legend>
+                           <div class="col-12">
+                              <div class="form-check">
+                                 <input class="form-check-input" type="radio" name="gridRadios" id="No_We_Never_used_A_Cleaning_Company" value="No_We_Never_used_A_Cleaning_Company" required>
+                                 <label class="form-check-label" for="No_We_Never_used_A_Cleaning_Company">
+                                    Yes
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-12">
+                              <div class="form-check">
+                                 <input class="form-check-input" type="radio" name="gridRadios" id="Yes_We_Have_used_A_Cleaning_Company" value="Yes_We_Have_used_A_Cleaning_Company" required>
+                                 <label class="form-check-label" for="Yes_We_Have_used_A_Cleaning_Company">
+                                    No
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </fieldset>
+                      <!-- Services Dropdown -->
+                      <div class="col-md-6 mt-4">
+                        <label for="Service" class="form-label">How did you hear about us?</label>
+                        <select id="Service" class="form-select" required>
+                        <option selected disabled value=>Choose...</option>
+                        <option>Google</option>
+                        <option>Mail</option>
+                        <option>Facebook</option>
+                        <option>Linkedin</option>
+                        <option>Referral</option>
+                        <option>Other</option>
+                        </select>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Please let us know how did you hear about us.
+                        </div>
+                     </div>
+                     <div class="form-floating mt-4">
+                        <textarea class="form-control" placeholder="Leave a Message here" id="floatingTextarea"></textarea>
+                        <label class="text-area-lable" for="floatingTextarea">Any notes that you might like to add?</label>
+                     </div>
+                     <div class="col-12 d-flex justify-content-end mt-4">
+                           <button type="submit" class="btn btn-primary">Submit Your Request</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-------------------------------------------------------------------------------------------------------
+   FOOTER SECTION
+   -------------------------------------------------------------------------------------------------------->
+   <footer id="footer">
+      <div class="container">
+         <div class="row d-flex justify-content-between">
+               <!-- Footer Logo Col -->
+               <div class="col-lg-3 footer-logo-wrapper">
+                  <div class="logo-box">
+                     <a href="index.html"><img class="footer-logo" src="/assets/img/logo_big.svg" alt="Company Logo"></a>
+                  </div>
+               </div>
+               <!-- Footer Link Col -->
+               <div class="col-md-4 col-lg-2">
+                  <div class=" border-bottom mb-2 mt-4 mt-md-5 mt-lg-0">
+                     <h5 class="text-light">Links</h5>
+                  </div>
+                  <nav>
+                     <ul class="nav d-flex flex-column pe-3">
+                           <li class="nav-item">
+                              <a class="nav-link text-light" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link text-light" href="resources.html">Resources</a>
+                           </li> 
+                           <li class="nav-item">
+                              <a class="nav-link text-light" href="contact.html">Contact</a>
+                           </li>  
+                           <li class="nav-item">
+                              <a class="nav-link text-light active" aria-current="page" href="#">Request A Quote</a>
+                           </li>  
+                     </ul>  
+                  </nav>
+               </div>
+               <!-- Footer Social Col -->
+               <div class="col-md-3 col-lg-2">
+                  <div class="border-bottom mb-2 mt-4 mt-md-5 mt-lg-0">
+                     <h5 class="text-light">Follow Us</h5>
+                  </div>
+                  <nav>
+                     <ul class="nav d-flex flex-column pe-3">
+                           <li class="nav-item">
+                              <a class="nav-link text-light" href="#"><i class="fa-brands fa-linkedin-in me-2"></i>Linkedin</a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link text-light" href="#services"><i class="fa-brands fa-facebook-f me-2"></i>Facebook</a>
+                           </li>
+                           <li class="nav-item d-flex align-items-stretch">
+                           <a class="nav-link text-light" href="#industrys"><i class="fa-brands fa-youtube me-2"></i>YouTube</a>
+                           </li>
+                     </ul>  
+                  </nav>
+               </div>
+               <!-- Footer Contact Col -->
+               <div class="col-md-5 col-lg-3">
+                  <div class=" border-bottom mb-2  mt-4 mt-md-5 mt-lg-0">
+                     <h5 class="text-light">Contact Info</h5>
+                  </div>
+                  <nav>
+                     <ul class="nav d-flex flex-column pe-3">
+                           <li class="nav-item">
+                              <a class="nav-link text-light" href="#"><i class="fa-solid fa-phone me-2"></i>(888) 232-2323</a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link text-light" href="#services"><i class="fa-solid fa-envelope me-2"></i>contact@janitorsdirect.com</a>
+                           </li>
+                     </ul>  
+                  </nav>
+               </div>
+         </div>
+         <div class="row">
+               <div class="text-small">
+                  <p class="text-light text-small text-center mt-3 mt-lg-5">&copy; Janitors Direct, LLC. 2022.</p>
+               </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="/assets/js/bootstrap.bundle.js"></script>
+   <script>
+      // JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+         form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+         }, false)
+      })
+      })()
+   </script>
+   <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+   </script>
+</body>
+</html>

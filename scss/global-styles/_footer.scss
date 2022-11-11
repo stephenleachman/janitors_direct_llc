@@ -1,0 +1,51 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+#footer {
+   padding: 5rem 0rem 0 0rem;
+   background-color: $dark;
+   margin-top: auto;
+   font-size: 0.9rem !important;
+   h5 {
+      font-size: 1rem;
+   }
+   a {
+      padding-right: 0;
+      padding-left: 0;
+   }
+   i {
+      font-size: 0.8rem;
+   }
+   .footer-logo {
+      max-width: 100%;
+   }
+   .nav {
+      a {
+         transition: 0.2s ease;
+      }
+      a:hover {
+         color: $primary !important;
+         transition: 0.2s ease;
+      }
+      .active {
+         color: $primary !important;
+      }
+   }
+   .border-bottom {
+      border-color: rgba(255, 255, 255, 0.208) !important;
+   }
+   .text-small {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.422) !important;
+   }
+   @include media-breakpoint-down(lg) { 
+      padding: 3rem 0rem 0 0rem;
+      .footer-logo-wrapper {
+         display: flex;
+         justify-content: center;
+         .footer-logo {
+            width: 300px;
+         }
+      }
+   }
+}

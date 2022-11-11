@@ -1,0 +1,221 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+// ----------------------------------------------------------------------------------------------
+// HERO SECTION 
+// ______________________________________________________________________________________________
+#hero {
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   min-height: 700px;
+   .badge {
+      background-color: rgba(51, 51, 51, 0.091);
+      color: $dark;
+   }
+   .video-container {
+      background-color: $dark;
+      width: 500px;
+      height: 300px;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      text-decoration: none;
+      position: relative;
+      transition: 0.5s ease;
+      i {
+         color: $secondary;
+         font-size: 2rem;
+         position: absolute;
+         // @include absoluteCenter;
+         transition: 0.5s ease;
+      }
+      .play-annimation {
+         width: 6rem;
+         height: 6rem;
+         border: 0.45rem solid $secondary;
+         border-radius: 50%;
+         transition: 0.5s ease;
+         // animation: play-btn 1s linear infinite;
+      }
+   }
+   .video-container:hover {
+      box-shadow: none;
+      color: $primary;
+      transition: 0.5s ease;
+      i {
+         color: $primary;
+         transition: 0.5s ease;
+      }
+      p {
+         color: $primary !important;
+         transition: 0.5s ease;
+      }
+      .play-annimation {
+         border: 0.45rem solid $primary;
+         transition: 0.5s ease;
+      }
+   }
+   @include media-breakpoint-down(lg) { 
+      padding-top: 8rem;
+      padding-bottom: 5rem;
+   }
+   @include media-breakpoint-down(md) { 
+      padding-top: 6rem;
+   }
+}
+.gnext {
+   display: none !important;
+}
+.gprev {
+   display: none !important;
+}
+
+// ----------------------------------------------------------------------------------------------
+// SERVICES SECTION
+// ______________________________________________________________________________________________
+
+#services {
+   padding: 11rem 0rem 11rem 0rem;
+   img {
+      width: 100%;
+   }
+   .list-group-item {
+      color: $dark !important;
+      background-color: $secondary;
+      font-size: 1rem;
+      &.active {
+         background-color: $primary !important;
+      }
+   }
+   @include media-breakpoint-down(lg) { 
+      img {
+         display: none;
+      }
+      padding: 5rem 0rem 5rem 0rem;
+   }
+   @include media-breakpoint-down(md) { 
+      .border-end {
+         border: none !important;
+      }
+   }
+}
+
+// ----------------------------------------------------------------------------------------------
+// INDUSTRY SECTION
+// ______________________________________________________________________________________________
+
+#industrys {
+   padding: 11rem 0rem 11rem 0rem;
+   .card-primary {
+      background-color: $primary;
+      padding: 1rem;
+      height: 100%;
+      img {
+         max-width: 5rem;
+         margin: auto;
+      }
+   }
+   @include media-breakpoint-down(lg) { 
+      padding: 5rem 0rem 5rem 0rem;
+   }
+}
+
+// ----------------------------------------------------------------------------------------------
+// GET STARTED SECTION
+// ______________________________________________________________________________________________
+
+#get_started {
+   padding: 11rem 0rem 11rem 0rem;
+   .get-started-row {
+      margin-top: 5rem;
+   }
+   .progress-dot {
+      width: 2.3rem;
+   }
+   .progress-line {
+      position: absolute;
+      display: block;
+      max-width: 70%;
+      margin-top: 86px;
+      border: none;
+      border-top: 2px dotted $dark;
+   }
+   @include media-breakpoint-down(lg) { 
+      padding: 5rem 0rem 5rem 0rem;
+   }
+   @include media-breakpoint-down(md) { 
+      .progress-line {
+         display: none;
+      }
+      .progress-dot {
+         display: none;
+      }
+      .display-6 {
+         display: inline-block;
+         padding: 0.4rem;
+         background-color: #ffc80070;
+         border-radius: 50%;
+      }
+      .get-started-row {
+         margin-top: 1rem;
+      }
+   }
+}
+
+// ----------------------------------------------------------------------------------------------
+// ABOUT US SECTION
+// ______________________________________________________________________________________________
+
+#about {
+   background-color: $secondary;
+   padding: 5rem 0rem 11rem 0rem;
+   ul {
+      li {
+         list-style-type: none;  
+         a {
+               color: $dark !important;
+               text-decoration: none;
+               transition: 0.3s ease;
+               &:hover {
+                  opacity: 70%;
+                  transition: 0.3s ease;
+               }
+         }
+         .fa-location-dot {
+               color: $primary;
+         }
+         h5 {
+               font-size: 1.1rem;
+         }
+      }
+      .dot {
+         list-style-type:square;  
+         margin-left: 2.2rem;
+      }
+   }
+   @include media-breakpoint-down(lg) { 
+      padding: 0rem 0rem 5rem 0rem;
+   }
+}
+
+// ----------------------------------------------------------------------------------------------
+// FEATURED RESOURCES SECTION
+// ______________________________________________________________________________________________
+
+#featured_resource {
+   background-color: #f0f0f0;
+   padding: 11rem 0rem 11rem 0rem;
+   .card {
+      // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 100% !important;
+      transition: 0.2s ease;
+      box-shadow: none;
+      &:hover {
+         box-shadow: none;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         transition: 0.5s ease;
+      }
+   }
+   @include media-breakpoint-down(lg) { 
+      padding: 5rem 0rem 5rem 0rem;
+   }
+}

@@ -1,0 +1,60 @@
+
+@use '../custom' as *;
+
+.navbar{
+   a {
+      text-decoration: none !important;
+   }
+   .btn:hover {
+      color: $dark !important;
+      opacity: 90%;
+   }
+   height: 60px;
+   @media only screen and (max-width: 1201px) {
+      .offcanvas-body {
+         display: none;
+      }
+   }
+   @media only screen and (max-width: 1180px) {
+      .offcanvas-body {
+         display: inline-block;
+      }
+   }
+   @include media-breakpoint-up(xl) { 
+      .active {
+         background-color: $primary;
+         color: $dark !important;
+      }
+      .navbar-brand img {
+         height: 27px !important;
+      }
+      .nav-link {
+         height: 60px;
+         transition: 0.3s ease;
+         padding-left: 1.1rem !important;
+         padding-right: 1.1rem !important;
+         
+      }
+      .nav-link:hover {
+         background-color: $primary;
+         color: $dark !important;    
+         transition: 0.3s ease;
+      }
+      a {
+         transition: 0.3s ease;
+         i {
+               font-size: small;
+               margin-top: 0.1rem;
+         }
+      }
+      a:hover {
+         color: $primary !important;
+         transition: 0.3s ease;
+      }
+   }
+   @include media-breakpoint-down(xl) { 
+      // .offcanvas-body {
+      //     margin-top: -2rem;
+      // }
+   }
+}

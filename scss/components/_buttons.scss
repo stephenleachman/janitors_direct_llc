@@ -1,0 +1,35 @@
+@use '../custom' as *;
+
+.btn-primary {
+    transition: 0.3s ease;
+    &:hover {
+    transition: 0.3s ease;
+    }
+}
+.btn {
+    i {
+        transition: 0.3s ease;
+    }
+    &:hover {
+        i {
+            transform:translate(4px,0px);
+            transition: 0.3s ease;
+        }
+    }
+}
+.arrow-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+.arrow-link {
+    i {
+        transition: 0.3s ease;
+    }
+    &:hover {
+        opacity: 70%;
+        i {
+            transform:translate(4px,0px);
+            transition: 0.3s ease;
+        }
+    }
+}
