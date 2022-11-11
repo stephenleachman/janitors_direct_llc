@@ -100,12 +100,12 @@
             </div>
             <!-- FORM IMPUTES -->
             <div class="col-lg-7">
-               <form class="g-3 needs-validation" novalidate>
+               <form name="Request_Quote" class="g-3 needs-validation" method="POST" data-netlify="true" novalidate>
                   <div class="row">
                      <!-- Name -->
                      <div class="col-md-6">
                         <label for="Name" class="form-label mt-3">Your Name:</label>
-                        <input type="text" class="form-control" id="Name" required>
+                        <input type="text" class="form-control" id="Name" name="Name" required>
                         <div class="valid-feedback">
                            Looks good!
                         </div>
@@ -116,7 +116,7 @@
                      <!-- Position -->
                      <div class="col-md-6">
                         <label for="Position" class="form-label mt-3">Position:</label>
-                        <input type="text" class="form-control" id="Position" placeholder="Example CFO" required>
+                        <input type="text" class="form-control" id="Position" name="Position" placeholder="Example CFO" required>
                         <div class="valid-feedback">
                            Looks good!
                         </div>
@@ -127,7 +127,7 @@
                      <!-- Email -->
                      <div class="col-md-6">
                         <label for="Email" class="form-label mt-3">Email:</label>
-                        <input type="email" class="form-control" id="Email" required>
+                        <input type="email" class="form-control" id="Email" name="Email" required>
                         <div class="valid-feedback">
                            Looks good!
                         </div>
@@ -138,7 +138,7 @@
                      <!-- Phone Number -->
                      <div class="col-md-6">
                         <label for="Number" class="form-label mt-3">Phone Number:</label>
-                        <input type="text" class="form-control" id="Number" required>
+                        <input type="text" class="form-control" id="Number" name="Number" required>
                         <div class="valid-feedback">
                            Looks good!
                         </div>
@@ -149,7 +149,7 @@
                      <!-- Company -->
                      <div class="col-md-6">
                         <label for="Company" class="form-label mt-3">Company:</label>
-                        <input type="text" class="form-control" id="Company" required>
+                        <input type="text" class="form-control" id="Company" name="Company" required>
                         <div class="valid-feedback">
                            Looks good!
                         </div>
@@ -162,8 +162,8 @@
                   <!-- Address Row -->
                   <div class="row address mt-5">
                      <div class="col-md-6">
-                        <label for="Street_Adderss" class="form-label mt-3">Address:</label>
-                        <input type="text" class="form-control" id="Street_Adderss" required>
+                        <label for="Adderss" class="form-label mt-3">Address:</label>
+                        <input type="text" class="form-control" id="Adderss" name="Address" required>
                         <div class="valid-feedback">
                            Looks good!
                         </div>
@@ -173,13 +173,13 @@
                      </div>
                      <!-- Address 2 -->
                      <div class="col-md-6 ">
-                        <label for="Street_Adderss" class="form-label mt-3">Address 2:</label>
-                        <input type="text" class="form-control" id="Street_Adderss">
+                        <label for="Adderss_2" class="form-label mt-3">Address 2:</label>
+                        <input type="text" class="form-control" id="Address_2" name="Address_2">
                      </div>
                      <!-- City -->
                      <div class="col-md-6">
                         <label for="City" class="form-label mt-3">City:</label>
-                        <input type="text" class="form-control" id="City" required>
+                        <input type="text" class="form-control" id="City"  name="City" required>
                         <div class="valid-feedback">
                            Looks good!
                         </div>
@@ -189,14 +189,14 @@
                      </div>
                      <div class="col-md-3">
                         <label for="Service" class="form-label mt-3">State</label>
-                        <select id="Service" class="form-select" disabled>
+                        <select id="Service" class="form-select" name="State" disabled>
                         <option selected>Florida</option>
                         </select>
                      </div>
                      <!-- Zip -->
                      <div class="col-md-3">
                         <label for="Zip" class="form-label mt-3">Zip:</label>
-                        <input type="text" class="form-control" id="Zip" required>
+                        <input type="text" class="form-control" id="Zip" name="Zip" required>
                         <div class="valid-feedback">
                            Looks good!
                         </div>
@@ -211,7 +211,7 @@
                      <!-- Services Dropdown -->
                      <div class="col-md-6">
                         <label for="Service" class="form-label mt-3">How can we help?</label>
-                        <select id="Service" class="form-select" required>
+                        <select id="Service" class="form-select" name="Services" required>
                         <option selected disabled value=>Choose...</option>
                         <option>Maintenance Cleaning</option>
                         <option>Facility Deep Cleaning</option>
@@ -227,7 +227,7 @@
                      </div>
                      <!-- SQ Footage -->
                      <div class="col-md-6">
-                        <label for="Zip" class="form-label d-flex justify-content-between mt-3">Whats the sq footage of your facility?
+                        <label for="SQ_Foot" class="form-label d-flex justify-content-between mt-3">Whats the sq footage of your facility?
                            <button type="button" class="tooltip-question"
                                  data-bs-toggle="tooltip" data-bs-placement="top"
                                  data-bs-custom-class="custom-tooltip"
@@ -235,13 +235,7 @@
                            <i class="fa-regular fa-circle-question"></i>
                            </button>
                         </label>
-                        <input type="text" class="form-control" id="Zip">
-                        <div class="valid-feedback">
-                           Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                           Please provide us with a valid Zip Code.
-                        </div>
+                        <input type="text" class="form-control" id="SQ_Foot" name="SQ_Footage">
                      </div>
                      <!-- Check Box -->
                      <fieldset class="col-md-6 mt-4">
@@ -249,17 +243,17 @@
                            <legend class="col-form-label col-12 mb-1 mt-3">Have you previously used a commercial cleaning company?</legend>
                            <div class="col-12">
                               <div class="form-check">
-                                 <input class="form-check-input" type="radio" name="gridRadios" id="No_We_Never_used_A_Cleaning_Company" value="No_We_Never_used_A_Cleaning_Company" required>
+                                 <input class="form-check-input" type="radio" name="gridRadios" id="No_We_Never_used_A_Cleaning_Company" name="No_We_Never_used_A_Cleaning_Company" value="No_We_Never_used_A_Cleaning_Company" required>
                                  <label class="form-check-label" for="No_We_Never_used_A_Cleaning_Company">
-                                    Yes
+                                    No
                                  </label>
                               </div>
                            </div>
                            <div class="col-12">
                               <div class="form-check">
-                                 <input class="form-check-input" type="radio" name="gridRadios" id="Yes_We_Have_used_A_Cleaning_Company" value="Yes_We_Have_used_A_Cleaning_Company" required>
+                                 <input class="form-check-input" type="radio" name="gridRadios" id="Yes_We_Have_used_A_Cleaning_Company" name="Yes_We_Have_used_A_Cleaning_Company" value="Yes_We_Have_used_A_Cleaning_Company" required>
                                  <label class="form-check-label" for="Yes_We_Have_used_A_Cleaning_Company">
-                                    No
+                                    Yes
                                  </label>
                               </div>
                            </div>
@@ -268,7 +262,7 @@
                       <!-- Services Dropdown -->
                       <div class="col-md-6 mt-4">
                         <label for="Service" class="form-label mt-3">How did you hear about us?</label>
-                        <select id="Service" class="form-select" required>
+                        <select id="Service" class="form-select" name="Found_On" required>
                         <option selected disabled value=>Choose...</option>
                         <option>Google</option>
                         <option>Mail</option>
@@ -285,7 +279,7 @@
                         </div>
                      </div>
                      <div class="form-floating mt-4">
-                        <textarea class="form-control" placeholder="Leave a Message here" id="floatingTextarea"></textarea>
+                        <textarea class="form-control" placeholder="Leave a Message here" id="floatingTextarea" name="Added_Notes"></textarea>
                         <label class="text-area-lable" for="floatingTextarea">Any notes that you might like to add?</label>
                      </div>
                      <div class="col-12 d-flex justify-content-end mt-4">
