@@ -188,8 +188,8 @@
                         </div>
                      </div>
                      <div class="col-md-3">
-                        <label for="Service" class="form-label mt-3"  name="role[]" multiple>State</label>
-                        <select id="Service" class="form-select" disabled>
+                        <label for="Service" class="form-label mt-3">State</label>
+                        <select id="Service" class="form-select" name="flooring-type[]"  disabled>
                         <option value="Florida" selected>Florida</option>
                         </select>
                      </div>
@@ -210,13 +210,13 @@
                   <div class="row mt-5">
                      <!-- Services Dropdown -->
                      <div class="col-md-6">
-                        <label for="Service" class="form-label mt-3" name="role[]" multiple>How can we help?</label>
-                        <select id="Service" class="form-select" required>
-                        <option selected disabled>Choose...</option>
-                        <option value="Maintenance Cleaning">Maintenance Cleaning</option>
-                        <option value="Facility Deep Cleaning">Facility Deep Cleaning</option>
-                        <option value="Disinfectant Services">Disinfectant Services</option>
-                        <option  value="Not Sure">Not Sure</option>
+                        <label for="Service" class="form-label mt-3">How can we help?</label>
+                        <select id="Service" class="form-select" name="flooring-type[]" required>
+                        <option>Choose...</option>
+                        <option>Maintenance Cleaning</option>
+                        <option>Facility Deep Cleaning</option>
+                        <option>Disinfectant Services</option>
+                        <option>Not Sure</option>
                         </select>
                         <div class="valid-feedback">
                            Looks good!
@@ -262,8 +262,8 @@
                       <!-- Services Dropdown -->
                       <div class="col-md-6 mt-4">
                         <label for="Service" class="form-label mt-3">How did you hear about us?</label>
-                        <select id="Service" class="form-select" name="Found_On" required>
-                        <option selected disabled value=>Choose...</option>
+                        <select id="Service" class="form-select" name="Found_On" name="flooring-type[]"  required>
+                        <option selected disabled value =>Choose...</option>
                         <option>Google</option>
                         <option>Mail</option>
                         <option>Facebook</option>
