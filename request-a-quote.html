@@ -190,8 +190,7 @@
                      <div class="col-md-3">
                         <label for="State" class="form-label mt-3">State</label>
                         <input id="State" class="form-select" name="State" value="Florida" disabled>
-                           <option value="Florida" selected>Florida</option>
-                       
+                           <!-- <option selected>Florida</option>  -->
                      </div>
                      <!-- Zip -->
                      <div class="col-md-3">
@@ -209,7 +208,7 @@
                   <!-- Row Cleaning Info -->
                   <div class="row mt-5">
                      <!-- Services Dropdown -->
-                     <div class="col-md-6">
+                     <div class="col-xl-6">
                         <label for="Service" class="form-label mt-3">How can we help?</label>
                         <select id="Service" class="form-select" name="role[]" required>
                            <option>Choose...</option>
@@ -226,42 +225,28 @@
                         </div>
                      </div>
                      <!-- SQ Footage -->
-                     <div class="col-md-6">
-                        <label for="SQ_Footage" class="form-label d-flex justify-content-between mt-3">Whats the sq footage of your facility?</label>
+                     <div class="col-xl-6">
+                        <label for="SQ_Footage" class="form-label mt-3">Whats the sq footage of your facility?<span class="small ms-3">(Optional)</span></label>
                         <input type="text" class="form-control" id="SQ_Footage" name="SQ_Footage">
-                           <!-- <button type="button" class="tooltip-question"
-                                 data-bs-toggle="tooltip" data-bs-placement="top"
-                                 data-bs-custom-class="custom-tooltip"
-                                 data-bs-title="If you are unsure you can leave this blank">
-                           <i class="fa-regular fa-circle-question"></i>
-                           </button> -->
-                        
-                      
                      </div>
-                     <!-- Check Box -->
-                     <!-- <fieldset class="col-md-6 mt-4">
-                        <div class="row">
-                           <legend class="col-form-label col-12 mb-1 mt-3">Have you previously used a commercial cleaning company?</legend>
-                           <div class="col-12">
-                              <div class="form-check">
-                                 <input class="form-check-input" type="radio" id="No_We_Never_used_A_Cleaning_Company" name="No We Never used A Cleaning Company" required>
-                                 <label class="form-check-label" for="No_We_Never_used_A_Cleaning_Company">
-                                    No
-                                 </label>
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="form-check">
-                                 <input class="form-check-input" type="radio" id="Yes_We_Have_used_A_Cleaning_Company" value="Yes We Have used A Cleaning Company" required>
-                                 <label class="form-check-label" for="Yes_We_Have_used_A_Cleaning_Company">
-                                    Yes
-                                 </label>
-                              </div>
-                           </div>
+                     <!-- previously used a cleaning company? -->
+                     <div class="col-xl-6 mt-4">
+                        <label for="Previous_cleaning_company" class="form-label mt-3">Have you previously used a cleaning company?</label>
+                        <select id="Previous_cleaning_company" class="form-select" name="Previous_cleaning_company" name="role[]" >
+                           <option selected disabled value =>Choose...</option>
+                           <option value="Yes">Yes</option>
+                           <option value="No">No</option>
+                           <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
+                        <!-- <div class="valid-feedback">
+                           Looks good!
                         </div>
-                     </fieldset> -->
+                        <div class="invalid-feedback">
+                           Please let us know you previously used a cleaning company?.
+                        </div> -->
+                     </div>
                       <!-- Fond On Dropdown -->
-                      <div class="col-md-6 mt-4">
+                      <div class="col-xl-6 mt-4">
                         <label for="Fond_On" class="form-label mt-3">How did you hear about us?</label>
                         <select id="Fond_On" class="form-select" name="Found_On" name="role[]"  required>
                            <option selected disabled value =>Choose...</option>
