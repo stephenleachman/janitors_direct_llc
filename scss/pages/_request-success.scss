@@ -1,0 +1,16 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+#request_sucess {
+  
+   background-color: $primary;
+   padding-top: 13rem;
+   padding-bottom: 9rem;
+   // .content-wrapper {
+   //    background-color: $secondary;
+   //    padding: 1rem;
+      
+   //    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   // }
+}
