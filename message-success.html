@@ -4,14 +4,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Meta Descripition -->
-   <meta name="description" content="Janitors Direct meta discription gos here">
+    <!-- Meta Descripition -->
+   <meta name="description" content="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price: $17.99, Length: 784 pages">
    <link rel="stylesheet" href="assets/css/style.css">
    <link rel="stylesheet" href="assets/css/fontawesome.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
    <!-- Favicons -->
    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/">
    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons//favicon-32x32.png">
@@ -20,11 +19,14 @@
    <link rel="mask-icon" href="assets/favicons//safari-pinned-tab.svg" color="#494949">
    <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
+   <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+   <!-- Anama css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-   <title>Contact</title>
+   <title>Janitors Direct</title>
 </head>
 
-<body class="bg-secondary">
+<body class="bg-primary">
    <!-------------------------------------------------------------------------------------------------------
    MANE NAVBAR 
    -------------------------------------------------------------------------------------------------------->
@@ -53,12 +55,12 @@
                   <a class="nav-link d-flex align-items-center text-light" href="resources.html">Resources</a>
                </li> 
                <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center text-light active" aria-current="page" href="#">Contact</a>
+                  <a class="nav-link d-flex align-items-center text-light" href="contact.html">Contact</a>
                </li> 
             </ul>         
             <!-- Right Site Btn & # -->
             <form class="container-xl-fluid d-xl-flex justify-content-end align-items-center ms-xl-5">
-               <a href="tel:5554280940" class="me-4 text-light d-flex align-items-center mt-3 mt-xl-0" id="phone"><i class="fa-solid fa-phone me-2"></i>(888) 323-2232</a>
+               <a href="" class="me-4 text-light d-flex align-items-center mt-3 mt-xl-0" id="phone"><i class="fa-solid fa-phone me-2"></i>(888) 323-2232</a>
                <a href="request-a-quote.html" class="btn btn-md btn-primary mt-3 mt-xl-0">Requerst A Quote</a>
             </form>   
          </div>
@@ -66,128 +68,33 @@
    </nav>
    
    <!-------------------------------------------------------------------------------------------------------
-   HERO NAVBAR 
+   HERO SECTION 
    -------------------------------------------------------------------------------------------------------->
-   <section id="contact_hero">
+   <section  id="request_sucess">
       <div class="container">
          <div class="row d-flex justify-content-center">
                <div class="col-md-7">
-                  <h2 class="display-5 text-dark text-center">
-                     Contact <span class="text-secondary">Us!</span>
-                  </h2>
-                  <div class="d-flex justify-content-center">
-                     <div class="spacer spacer-secondary"></div>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                     <span class="badge rounded-pill">How can we help you and your facility</span>
+                  <div class="content-wrapper">
+                     <h2 class="display-5 text-dark text-center">
+                        <span class="text-secondary">Greate! </span>We Receives Your Message
+                     </h2>
+                     <div class="d-flex justify-content-center">
+                        <div class="spacer spacer-secondary"></div>
+                     </div>
+                     <p class="lead text-dark text-center">
+                        We will be reviewing your message and will contact you shortly. 
+                        Thank you for contacting Janitors Direct. 
+                     </p>
+                     <div class="d-flex justify-content-center">
+                        <a href="index.html" class="arrow-link text-dark mt-2">Return Home</a>
+                     </div>
                   </div>
                </div>
          </div>
       </div>
    </section>
 
-   <!-------------------------------------------------------------------------------------------------------
-   FORM SECTION SECTION
-   -------------------------------------------------------------------------------------------------------->
-   <section id="contact_form">
-      <div class="container mb-5">
-         <div class="row form-wrapper d-flex justify-content-between">
-               <div class="col-lg-4">
-                  <h2 class="text-dark mb-4 mt-3">
-                     Our Info
-                  </h2>
-                  <ul class="list-group">
-                     <li class="list-item">
-                           <div class="d-flex flex-row ">
-                              <i class="fa-solid fa-clock me-2 mt-1"></i>
-                              <p>Office Hours | Monday - Friday 8:00 AM - 9:00 PM</p>
-                           </div>
-                     </li>
-                     <li class="list-item mt-2">
-                           <a href="tel:5554280940" class="d-flex flex-row ">
-                              <i class="fa-solid fa-phone me-2 mt-1"></i>
-                              <p>(888) 3030-3024</p>
-                           </a>
-                     </li>
-                     <li class="list-item mt-2">
-                           <a href="mailto:webmaster@example.com" class="d-flex flex-row ">
-                              <i class="fa-solid fa-envelope me-2 mt-1"></i>
-                              <p>contact@janitorsdirect.com</p>
-                           </a>
-                     </li>
-                  </ul>
-                  <P class="mt-4">
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ex quasi repellendus suscipit ut dolor! 
-                     Cupiditate natus.
-                  </P>
-                  <a href="request-a-quote.html" class="arrow-link text-dark">Request A Quote<i class="fa-solid fa-arrow-right ms-2"></i></a>
-               </div>
-               <!-- FORM IMPUTES -->
-               <div class="col-lg-7 mt-lg-3 mt-5">
-                  <form class="row g-3 needs-validation" name="Contact" method="POST" action="message-success.html" data-netlify="true" novalidate>
-                     <div class="col-md-6">
-                        <label for="Name" class="form-label">Name:</label>
-                        <input type="text" class="form-control" id="Name" name="name" required>
-                        <div class="valid-feedback">
-                           Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                           What is your name?
-                        </div>
-                     </div>
-                     
-                     <div class="col-md-6">
-                        <label for="Company" class="form-label">Company:</label>
-                        <input type="text" class="form-control" id="Company" name="Company" required>
-                        <div class="valid-feedback">
-                           Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                           Please provide us with your company.
-                        </div>
-                     </div>
-                     <div class="col-md-6">
-                        <label for="Email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="Email" name="Email" required>
-                        <div class="valid-feedback">
-                           Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                           Please provide us with your email.
-                        </div>
-                     </div>
-
-                     <div class="col-md-6">
-                        <label for="inputSubject" class="form-label">Subject:</label>
-                        <select id="inputSubject" class="form-select" name="role[]" required>
-                        <option selected disabled value=>Choose...</option>
-                        <option value="Existing Client">Existing Client</option>
-                        <option value="General Inquiries">General Inquiries</option>
-                        </select>
-                        <div class="valid-feedback">
-                           Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                           What is the subject of your message.
-                        </div>
-                     </div>
-                     
-                     <div class="form-floating mt-4">
-                           <textarea class="form-control" placeholder="Leave a Message here" id="Message"  name="message" required></textarea>
-                           <label class="text-area-lable" for="Massage">Massage</label>
-                        </div>
-                     <div class="col-12 d-flex justify-content-end">
-                           <button type="submit" class="btn btn-primary">Send</button>
-                     </div>
-                  </form>
-               </div>
-         </div>
-      </div>
-   </section>
-
-   <!-------------------------------------------------------------------------------------------------------
-   FOOTER SECTION
-   -------------------------------------------------------------------------------------------------------->
+  
    <footer id="footer">
       <div class="container">
          <div class="row d-flex justify-content-between">
@@ -211,7 +118,7 @@
                               <a class="nav-link text-light" href="resources.html">Resources</a>
                            </li> 
                            <li class="nav-item">
-                              <a class="nav-link text-light active" aria-current="page" href="contact.html">Contact</a>
+                              <a class="nav-link text-light" href="contact.html">Contact</a>
                            </li>  
                            <li class="nav-item">
                               <a class="nav-link text-light" href="request-a-quote.html">Request A Quote</a>
@@ -250,7 +157,7 @@
                            </li>
                            <li class="nav-item">
                            <a class="nav-link text-light" href="#services"><i class="fa-solid fa-envelope me-2"></i>contact@janitorsdirect.com</a>
-                           </li>
+                        </li>
                      </ul>  
                   </nav>
                </div>
@@ -264,26 +171,5 @@
    </footer>
 
    <script src="/assets/js/bootstrap.bundle.js"></script>
-   <script>
-      // JavaScript for disabling form submissions if there are invalid fields
-      (() => {
-      'use strict'
-
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      const forms = document.querySelectorAll('.needs-validation')
-
-      // Loop over them and prevent submission
-      Array.from(forms).forEach(form => {
-         form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-            }
-
-            form.classList.add('was-validated')
-         }, false)
-      })
-      })()
-   </script>
 </body>
 </html>
