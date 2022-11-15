@@ -77,8 +77,27 @@
 
 #services {
    padding: 11rem 0rem 11rem 0rem;
+   // background-color: #fff !important;
    img {
       width: 100%;
+   }
+   .list-group-item .text-small {
+      font-size: .8rem;
+      opacity: 70%;
+   }
+   .check {
+      img{
+         width: 15px;
+      }
+   }
+   .card { box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+
+  .accordion-body .list-group .list-group-item {
+   background-color: #ffff !important;
+  }
+   .tab-pane .text-small {
+      font-size: 1.1rem;
+      
    }
    .list-group-item {
       color: $dark !important;
@@ -88,8 +107,15 @@
          background-color: $primary !important;
       }
    }
+   #accordion1 {
+      margin-left: -1rem;
+      margin-right: -1rem;
+      margin-bottom: -1rem;
+   }
+
+
    @include media-breakpoint-down(lg) { 
-      img {
+      .services-image {
          display: none;
       }
       padding: 5rem 0rem 5rem 0rem;

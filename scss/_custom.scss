@@ -69,5 +69,11 @@ $btn-border-radius-sm:        none;
 $btn-border-radius-lg:        none;
 
 
+// $accordion-bg:    $secondary;
+
+$accordion-border-width: 0px;
+$accordion-button-focus-box-shadow:  none;
+
+
 // IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
