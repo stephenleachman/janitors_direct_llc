@@ -90,7 +90,7 @@
          width: 15px;
       }
    }
-   .card { box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+   .card { box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
 
   .accordion-body .list-group .list-group-item {
    background-color: #ffff !important;
@@ -152,7 +152,7 @@
 // ______________________________________________________________________________________________
 
 #get_started {
-   padding: 11rem 0rem 11rem 0rem;
+   padding: 11rem 0rem 8rem 0rem;
    .get-started-row {
       margin-top: 5rem;
    }
@@ -233,14 +233,22 @@
    background-color: #f0f0f0;
    padding: 11rem 0rem 11rem 0rem;
    .card {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
       // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       width: 100% !important;
       transition: 0.2s ease;
-      box-shadow: none;
+      // box-shadow: none;
       &:hover {
-         box-shadow: none;
+         // box-shadow: none;
          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
          transition: 0.5s ease;
+      }
+      h5 {
+         margin-top: 0.5rem;
+      }
+      .card-text {
+         max-height: 100px;
+         overflow: hidden;
       }
    }
    @include media-breakpoint-down(lg) { 

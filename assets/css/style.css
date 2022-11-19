@@ -11120,7 +11120,7 @@ a i {
   width: 15px;
 }
 #services .card {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #services .accordion-body .list-group .list-group-item {
   background-color: white !important;
@@ -11174,7 +11174,7 @@ a i {
 }
 
 #get_started {
-  padding: 11rem 0rem 11rem 0rem;
+  padding: 11rem 0rem 8rem 0rem;
 }
 #get_started .get-started-row {
   margin-top: 5rem;
@@ -11250,14 +11250,20 @@ a i {
   padding: 11rem 0rem 11rem 0rem;
 }
 #featured_resource .card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100% !important;
   transition: 0.2s ease;
-  box-shadow: none;
 }
 #featured_resource .card:hover {
-  box-shadow: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s ease;
+}
+#featured_resource .card h5 {
+  margin-top: 0.5rem;
+}
+#featured_resource .card .card-text {
+  max-height: 100px;
+  overflow: hidden;
 }
 @media (max-width: 991.98px) {
   #featured_resource {
@@ -11302,7 +11308,7 @@ a i {
   background-color: white !important;
   padding: 1rem;
   margin-top: -6rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #contact_form .form-wrapper textarea {
   min-height: 10rem;
@@ -11324,7 +11330,7 @@ a i {
   background-color: white !important;
   padding: 1rem;
   margin-top: -6rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #content_section .content-wrapper .card {
   border-top: none !important;
@@ -11332,6 +11338,14 @@ a i {
   border-right: none !important;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+}
+#content_section .content-wrapper .card .card-text {
+  height: 70px;
+  overflow: hidden;
+}
+#content_section .content-wrapper .card .text-small {
+  font-size: 0.8rem;
+  opacity: 90%;
 }
 #content_section .content-wrapper .card .img-wrapper {
   height: 100%;
@@ -11380,7 +11394,7 @@ a i {
   background-color: white !important;
   padding: 1rem;
   margin-top: -6rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #quote_form .form-wrapper textarea {
   min-height: 10rem;
@@ -11402,11 +11416,76 @@ a i {
   border: none !important;
 }
 
-#content_section .content-wrapper {
+#blog_hero_section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  min-height: 450px;
+  background-color: #ffc700;
+}
+#blog_hero_section .col {
+  padding-left: 0px !important;
+}
+#blog_hero_section .text-buld {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+#blog_hero_section .badge {
+  background-color: rgba(51, 51, 51, 0.091);
+  color: #333;
+}
+@media (max-width: 767.98px) {
+  #blog_hero_section {
+    padding-top: 8rem;
+  }
+}
+
+#blog_content_section .blog-content-wrapper {
   background-color: white !important;
-  padding: 1rem;
-  margin-top: -6rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 3rem;
+  margin-top: -13.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#blog_content_section .blog-content-wrapper h1 {
+  margin-bottom: 3rem;
+}
+#blog_content_section .blog-content-wrapper .a-calendar-days {
+  font-size: 0.3rem;
+}
+#blog_content_section .blog-content-wrapper h2 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+  padding-left: 20px;
+}
+#blog_content_section .blog-content-wrapper h3 {
+  margin-top: 6rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffc700;
+  display: inline-block;
+}
+#blog_content_section .blog-content-wrapper p {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+}
+#blog_content_section .blog-content-wrapper .text-small {
+  font-size: 0.8rem;
+}
+#blog_content_section .img-wrapper {
+  height: 450px;
+  width: 100%;
+}
+#blog_content_section .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 #request_sucess {
