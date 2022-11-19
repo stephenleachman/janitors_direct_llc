@@ -10823,7 +10823,7 @@ textarea.form-control-lg {
   margin-bottom: 1rem;
   display: inline-block;
   font-weight: 500;
-  font-family: "Asap", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .display-2--intro {
   display: inline-block;
@@ -10836,7 +10836,7 @@ textarea.form-control-lg {
 
 .display-3 {
   margin-bottom: 1rem;
-  font-family: "Asap", sans-serif;
+  font-family: "Roboto", sans-serif;
   display: inline-block;
   font-weight: 500;
 }
@@ -10865,12 +10865,12 @@ textarea.form-control-lg {
 .lead {
   font-size: 1.2rem;
   font-weight: 500;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Asap", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
 }
 
@@ -10880,16 +10880,16 @@ h1, h2, h3, h4, h5 {
 
 .badge {
   font-weight: 0.1rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
 
 a {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
 }
 a i {
@@ -11253,10 +11253,25 @@ a i {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100% !important;
   transition: 0.2s ease;
+  overflow: hidden;
 }
 #featured_resource .card:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s ease;
+}
+#featured_resource .card:hover img {
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+#featured_resource .card:hover .card-img-top {
+  overflow: hidden;
+}
+#featured_resource .card img {
+  transition: 1s ease;
+}
+#featured_resource .card .card-body {
+  background-color: white;
+  z-index: 3;
 }
 #featured_resource .card h5 {
   margin-top: 0.5rem;
