@@ -11511,6 +11511,9 @@ a i {
     margin-top: 0rem;
     padding: 8rem 1rem 1rem 1rem;
   }
+  #blog_content_section .blog-content-wrapper .img-wrapper {
+    height: 300px;
+  }
 }
 #request_sucess {
   background-color: #ffc700;
