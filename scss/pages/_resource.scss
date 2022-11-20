@@ -30,6 +30,7 @@
    }
 }
 
+
 #blog_content_section {
   
    .blog-content-wrapper {
@@ -81,6 +82,18 @@
          height:100%;
          object-fit:cover;
          border-radius: 10px;
+      }
+   }
+}
+
+@include media-breakpoint-down(sm) {
+   #blog_hero_section{ 
+      display: none; 
+   }
+   #blog_content_section {
+      .blog-content-wrapper {
+         margin-top: 0rem;
+         padding: 8rem 1rem 1rem 1rem;
       }
    }
 }

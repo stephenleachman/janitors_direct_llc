@@ -11503,6 +11503,15 @@ a i {
   border-radius: 10px;
 }
 
+@media (max-width: 575.98px) {
+  #blog_hero_section {
+    display: none;
+  }
+  #blog_content_section .blog-content-wrapper {
+    margin-top: 0rem;
+    padding: 8rem 1rem 1rem 1rem;
+  }
+}
 #request_sucess {
   background-color: #ffc700;
   padding-top: 13rem;
