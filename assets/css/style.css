@@ -11525,6 +11525,9 @@ a i {
   #blog_content_section .blog-content-wrapper .img-wrapper {
     height: 300px;
   }
+  h2 {
+    margin-top: 4 5rem !important;
+  }
 }
 #request_sucess {
   background-color: #ffc700;
