@@ -11371,6 +11371,12 @@ a i {
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 767.98px) {
+  #content_section .card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 
 #request_a_quote_hero {
   padding-top: 10rem;
@@ -11501,6 +11507,11 @@ a i {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+@media (max-width: 991.98px) {
+  #blog_content_section .blog-content-wrapper {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 575.98px) {
