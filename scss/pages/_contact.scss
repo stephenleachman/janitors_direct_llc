@@ -35,6 +35,7 @@
             color: $dark !important;
             text-decoration: none;
             transition: 0.3s ease;
+            display: inline-flex !important;
             &:hover {
                opacity: 70%;
                transition: 0.3s ease;

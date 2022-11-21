@@ -196,6 +196,7 @@
 #about {
    background-color: $secondary;
    padding: 5rem 0rem 11rem 0rem;
+   a { display: inline-flex !important; }
    ul {
       li {
          list-style-type: none;  
@@ -264,6 +265,9 @@
       .card-text {
          max-height: 100px;
          overflow: hidden;
+      }
+      @include media-breakpoint-down(md) { 
+         
       }
    }
    @include media-breakpoint-down(lg) { 

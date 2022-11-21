@@ -12,9 +12,11 @@
    a {
       padding-right: 0;
       padding-left: 0;
+      display: inline-flex !important;
    }
    i {
       font-size: 0.8rem;
+      margin-top: 4px;
    }
    .footer-logo {
       max-width: 100%;
