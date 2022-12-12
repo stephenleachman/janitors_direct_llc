@@ -11467,6 +11467,33 @@ a i {
   }
 }
 
+#blog_content_section .arrow-link {
+  position: absolute;
+  margin-top: -5.3rem;
+  margin-left: -2.8rem;
+  font-weight: bold;
+}
+#blog_content_section .arrow-link:hover i {
+  transform: translate(-4px, 0px) !important;
+  transition: 0.3s ease;
+}
+@media (max-width: 991.98px) {
+  #blog_content_section .arrow-link {
+    position: absolute;
+    margin-top: -4.3rem;
+    margin-left: -1.2rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 575.98px) {
+  #blog_content_section .arrow-link {
+    position: relative;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+}
 #blog_content_section .blog-content-wrapper {
   background-color: white !important;
   padding: 3rem;

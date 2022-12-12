@@ -32,8 +32,37 @@
 
 
 #blog_content_section {
-  
+   .arrow-link {
+      position: absolute;
+      margin-top: -5.3rem;
+      margin-left: -2.8rem;
+      font-weight: bold;
+      &:hover {
+         i{
+            transform:translate(-4px,0px) !important;
+            transition: 0.3s ease;
+         }
+      }
+   }
+   @include media-breakpoint-down(lg) {
+      .arrow-link {
+         position: absolute;
+         margin-top: -4.3rem;
+         margin-left: -1.2rem;
+         font-weight: bold;
+      }
+   }
+   @include media-breakpoint-down(sm) {
+      .arrow-link {
+         position: relative;
+         margin-top: 0rem;
+         margin-left: 0rem;
+         margin-bottom: 1rem;
+         font-weight: 600;
+      }
+   }
    .blog-content-wrapper {
+      
       background-color: white !important;
       padding: 3rem;
       margin-top: -13.5rem;
