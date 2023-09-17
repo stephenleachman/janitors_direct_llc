@@ -71,6 +71,25 @@
    display: none !important;
 }
 
+#HeroStats {
+   margin-top: -50px;
+   margin-bottom: -50px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+   .count-number {
+      font-weight: 800;
+      color: #5b5b5b;
+   }
+}
+@include media-breakpoint-down(lg) { 
+   #HeroStats {
+      margin-top: -100px;
+      margin-bottom: -50px;
+      .border-end{
+         border: none !important;
+      }
+   }
+}
+
 // ----------------------------------------------------------------------------------------------
 // SERVICES SECTION
 // ______________________________________________________________________________________________
