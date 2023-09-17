@@ -44,4 +44,9 @@
          padding-right: 0px;
       }
    }
+   @include media-breakpoint-down(sm) {
+      .content-wrapper {
+         box-shadow: none;
+      }
+   }
 }

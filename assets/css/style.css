@@ -11402,6 +11402,11 @@ a i {
     padding-right: 0px;
   }
 }
+@media (max-width: 575.98px) {
+  #content_section .content-wrapper {
+    box-shadow: none;
+  }
+}
 
 #request_a_quote_hero {
   padding-top: 10rem;
@@ -11573,6 +11578,7 @@ a i {
   #blog_content_section .blog-content-wrapper {
     margin-top: 0rem;
     padding: 8rem 1rem 1rem 1rem;
+    box-shadow: none !important;
   }
   #blog_content_section .blog-content-wrapper .img-wrapper {
     height: 300px;
